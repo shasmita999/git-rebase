@@ -13,18 +13,8 @@ resources:
     type: moeb.applicationPackage
   - name: src
     resources: 
-  - name: test(2).recdata
   - name: test(2).recsession
-    type: com.ibm.rational.test.lt.recsession
-    dependencies: 
-      - path: /Dev/test(2).recdata
-        type: recsessionRecdata
-  - name: test.recdata
-  - name: test.recsession
-    type: com.ibm.rational.test.lt.recsession
-    dependencies: 
-      - path: /Dev/test.recdata
-        type: recsessionRecdata
+    missing: true
   - name: test.testsuite
     type: com.ibm.rational.test.lt.test
     version: 11.0.2.0
@@ -33,7 +23,12 @@ resources:
       type: com.ibm.rational.test.lt.lttest
       uid: A1EF759901432B40C283B73863643532
     dependencies: 
+<<<<<<< HEAD
       - path: /Dev/_google_com_af9.ma
         type: test#moeb.applicationPackage
       - path: /Dev/test(2).recsession
         type: testRecsession
+=======
+      - path: /Dev/_google_com_c25.ma
+        type: test#moeb.applicationPackage
+>>>>>>> stash
